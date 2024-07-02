@@ -1,0 +1,62 @@
+/* src/components/Shared/Header.css */
+.header-container {
+    background: #24292e; /* GitHub dark gray */
+    border-bottom: 1px solid #444d56;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-brand {
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #c9d1d9; /* GitHub light gray */
+    font-size: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #58a6ff; /* GitHub blue */
+    transition: color 0.3s ease-in-out;
+}
+
+.search-form {
+    width: 250px;
+}
+
+.search-form .form-control {
+    border: 1px solid #30363d; /* GitHub input border */
+    background-color: #0d1117; /* GitHub dark input */
+    color: #c9d1d9;
+    border-radius: 6px;
+}
+
+.search-form .btn {
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #58a6ff;
+    border-radius: 6px;
+    padding: 0 0.75rem;
+}
+
+.nav-item .me-1 {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,0 +1,11 @@
+/* Footer.css */
+.footer {
+  background-color: #282c34; /* Same as header background */
+  color: white;
+  text-align: center; /* Center the text */
+  padding: 1rem 0;  
+  position: fixed;  /* Optional: make the footer sticky */
+  bottom: 0;
+  left: 0;
+  width: 100%;  /* Optional: make the footer full width */
+}
