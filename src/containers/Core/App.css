@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +37,84 @@
     transform: rotate(360deg);
   }
 }
+
+
+.bg-dark,.dark {
+  background-color: #1E2023 !important; /* Your dark background color */
+  color:white !important
+}
+
+.form-control, .form-select ,.MuiInputBase-root, .ant-input-number-group-addon, .ant-input-number-input, .ant-select-selector, .ant-btn{
+  background-color: #1E2023 !important; /* Your desired background color */
+  color: white !important;
+  border: #393b42 solid !important; /* Adjust text color if needed */
+}
+
+.form-control::placeholder, .form-select::placeholder ,.MuiInputBase-root::placeholder{ /* Target the placeholder text */
+  color: #7b7c7f !important; 
+  border: #1E2023 !important; /* Adjust text color if needed */
+
+}
+
+.bg-danger {
+  background-color: #ef454a !important;
+  border-color: #ef454a !important;
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth effect */
+}
+
+.bg-danger:hover {
+  background-color: #d93038 !important; /* Darker shade on hover */
+  border-color: #d93038 !important;
+}
+
+.bg-success {
+  background-color: #21b26c !important;
+  border-color: #21b26c !important;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.bg-success:hover {
+  background-color: #1c9a59 !important; /* Darker shade on hover */
+  border-color: #1c9a59 !important;
+}
+
+.bg-secondary {
+  background-color: #2862ff !important;
+  border-color: #2862ff !important;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.bg-secondary:hover {
+  background-color: #1d4abf !important; /* Darker shade on hover */
+  border-color: #1d4abf !important;
+}
+
+.bg-primary {
+  background-color: #101014 !important; /* Darker shade on hover */
+  border-color: #101014 !important;
+}
+
+/* Enhance with media queries for different screen sizes */
+@media (max-width: 768px) { /* Example for smaller screens */
+  .bg-danger:hover {
+    background-color: #c92028 !important; /* Even darker shade on hover */
+    border-color: #c92028 !important;
+  }
+
+  .bg-success:hover {
+    background-color: #17874c !important;
+    border-color: #17874c !important;
+  }
+
+  .bg-secondary:hover {
+    background-color: #14359e !important;
+    border-color: #14359e !important;
+  }
+
+}
+
+.card{
+  border-color:transparent !important;
+}
+
+

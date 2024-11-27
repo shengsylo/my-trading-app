@@ -1,0 +1,24 @@
+.search-container {
+  position: relative;
+}
+
+.search-results-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #dddcdc;
+  border: 1px solid #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.search-result {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.search-result:hover {
+  background-color: #f5f5f5;
+}

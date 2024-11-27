@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Global styles */
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: "Faculty Glyphic", sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+}
+
+.card-header{
+  font-weight: bold;
+  border-color: #ced4da;
+}
+
+.card-body,.card,.form-label{
+  background-color: black !important;
+  border-color: #626363  !important;
+  color:rgb(234, 229, 229) !important;
+}
+
+
+/* Auth container */
+.auth-container {
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+  width: 100%;
+  min-height: 87vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Auth card */
+.auth-card {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Form inputs */
+.form-input {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+/* Auth button */
+.auth-button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #3a7bc8;
+  border-color: #3a7bc8;
+}
+
+/* Logo */
+.auth-logo {
+  background-color: #ced4da;
+  width: 25%;
+  margin-bottom: 1rem;
+}
+
+/* Headings */
+.auth-heading {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Links */
+.auth-link {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Social buttons */
+.social-button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.password-reset-confirm .form-control.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+/* For WebKit-based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bs-dark); /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 3px solid var(--bs-dark); /* Space around the thumb to add padding */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when hovering over the scrollbar thumb */
+}
+
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for page navigation */
+}
+
+

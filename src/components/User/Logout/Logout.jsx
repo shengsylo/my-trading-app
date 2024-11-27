@@ -7,7 +7,7 @@ function Logout() {
 
     const handleLogout = async () => {
         try {
-        await axios.post(`${process.env.REACT_APP_API_URL}logout/`);
+        await axios.post(`${process.env.REACT_APP_API_URL}api/logout/`);
         localStorage.removeItem('authToken'); // Remove token from local storage
         navigate('/authForm');  // Redirect to login after logout
         } catch (error) {

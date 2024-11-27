@@ -11,3 +11,15 @@ export const handleError = (error, setMessage, setMessageType) => {
     }
     console.error('Error:', error);
 };
+
+export const validatePasswordFormat = (password) => {
+    const requirements = {
+        length: password.length >= 8,
+        uppercase: /[A-Z]/.test(password),
+        lowercase: /[a-z]/.test(password),
+        numeric: /[0-9]/.test(password),
+        specialChar: /[!@#$%^&*(),.?":{}|<>]/.test(password)
+    };
+    const valid = Object.values(requirements).every(Boolean);
+    return { valid, requirements };
+};
